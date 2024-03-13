@@ -1,0 +1,19 @@
+// black & white photos
+
+.bw-label{
+    @extend.header-btn;
+    display: inline-block;
+    color: #fff;
+}
+#bw{
+    display: none;
+}
+#bw:checked ~ *{
+   filter: grayscale(100%);
+   .bw-label{
+    background: linear-gradient(90deg,rgb(105,7,31)0%,
+    rgba(115,121,9,1)43%,
+    rgba(0,212,255,1)100%,);
+   };
+   border: 1px #a8a8aa solid;
+}

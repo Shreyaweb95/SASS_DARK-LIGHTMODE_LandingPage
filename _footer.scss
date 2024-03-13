@@ -1,0 +1,42 @@
+:root{
+    $facebook:#1877f2;
+    $instagram:#c32aa3;
+    $twitter:#1da1f2;
+    $youtube:#ff0000;
+}
+#footer{
+text-align: center;
+padding: 2rem 1rem;
+margin: auto;
+// color: #3333;
+background-color: #fff;
+// text-shadow: 1px 4px 2px rgba($color: #000000, $alpha: 0.1);
+}
+
+
+#social-media-icons{
+    .fa{
+        &-facebook{
+            color: #1877f2;
+        }
+        &-instagram{
+            color: #c32aa3;
+        }
+        &-twitter{
+            color: #1da1f2;
+        }
+        &-youtube{
+            color: #ff0000;
+        }
+    }
+    text-align: center;
+    padding: 2rem 1rem;
+    margin: auto;
+    text-shadow: 1px 4px 2px rgba($color: #000000, $alpha: 0.1);
+    // color: #3333;
+    // background-color: #fff;
+}
+h3{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}  

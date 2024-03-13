@@ -1,0 +1,40 @@
+input[type='checkbox']{
+    cursor: pointer;
+    z-index: 1;
+    position: absolute;
+    top: 10px;
+    left: 35vw;
+}
+#DM:checked ~ *{
+    filter: invert(100);
+}
+img{
+    height: 300px;
+    width: 500px;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+main{
+    background-color: #ffff;
+}
+input[type='checkbox']::before{
+    content: 'Dark-Mode';
+    width: 80px;
+    display: flex;
+    color: #ffff;
+    background-color: #3333;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+input[type='checkbox']:checked:before{
+   content: 'light-mode';
+   color: #333;
+   background-color: #fff;
+}
+img{
+    width: 750px;
+    height: 500px;
+    filter: inherit;
+}

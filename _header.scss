@@ -1,0 +1,63 @@
+// header
+header{
+    text-shadow: 1px 4px 2px rgba($color: #000000, $alpha:0.1);
+}
+@keyframes anime{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+.header-text{
+    display: flex;
+    flex: 0 1 40vw;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+    padding:  0 1rem;
+    text-align: center;
+    animation: anime 2s ease-in-out;
+    h2{
+        color: #6666;
+
+    }
+}
+
+
+#header-img{
+    background: url(https://source.unsplash.com/riLA6oy6ekM);
+    background-position: center;
+    background-size: cover;
+    height: 50vh;
+    background-repeat: no-repeat;
+    flex: 0 1 60vw;
+    margin: 0;
+    animation: anime 4s ease-in-out;
+
+}
+.header-btn{
+    padding: 0.5rem 2rem;
+    border: 1px #dddd solid;
+    outline: none;
+    margin:  2rem 0;
+    border-radius: 50px;
+    box-shadow:  0 0 5px 1px rgba($color: #000000, $alpha:0.3);
+    background-color: black;
+    a,i{
+        color: #ffff;
+        font-size: 1.2rem;
+        padding: 0.5rem;
+    }
+    &:active{
+        transform: scale(0.96);
+        box-shadow: none;
+    }
+
+}
+.header-btn:hover{
+    cursor: pointer;
+    background-color: #6666;
+   
+}
